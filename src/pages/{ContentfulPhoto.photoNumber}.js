@@ -165,8 +165,8 @@ font-size: 1.5rem;
 
 
 export const query = graphql`
-query($date: Date){
-  contentfulPhoto(date:{eq:$date}){
+query($photoNumber: Int){
+  contentfulPhoto(photoNumber:{eq:$photoNumber}){
     
       image{
         gatsbyImageData(layout:FULL_WIDTH)
@@ -175,6 +175,7 @@ query($date: Date){
         gatsbyImageData(layout:FULL_WIDTH)
       }
       date
+    	photoNumber
     }
   
 }`
