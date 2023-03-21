@@ -7,7 +7,7 @@ import styled from 'styled-components'
 
 const query = graphql`
   {
-    allContentfulPhoto(sort:{updatedAt:ASC}) {
+    allContentfulPhoto(sort:{updatedAt:DESC}) {
       nodes {
         image {
           gatsbyImageData(placeholder:BLURRED)
