@@ -7,7 +7,7 @@ import ProjectsList from '../components/ProjectsList'
 
 const query = graphql`
 {
-    allContentfulKisnonemugh(sort:{updatedAt:ASC}) {
+    allContentfulKisnonemugh(sort:{updatedAt:DESC}) {
      
         nodes {
           projectTitle
